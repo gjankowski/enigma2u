@@ -1,0 +1,11 @@
+{
+  "name": "enigma2u",
+  "version": "0.0.1",
+  "description": "Collecting channel data and video stream from enigma2 box. Transcoding with vlc",
+  "dependencies": {
+    "jsonfile": "^2.0.0",
+    "node-xml2json": "^1.0.0",
+    "mime": "~1.2.7",
+    "socket.io": "~0.9.6"
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script src='/javascripts/menu_generator.js' type='text/javascript'></script>
+<script src='/javascripts/communication.js' type='text/javascript'></script>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<title>App Title</title>
+  <link rel='stylesheet' href='/stylesheets/style.css'></link>
+</head>
+<body>
+    <div data-role="page" id="content">
+        <div id="cos">    
+            <div id="top" >
+        		<div id="date"></div>
+        		<div id="current"></div>
+        	</div>
+            
+            <div>   
+                <iframe id="frame" style="display:none"></iframe>
+                <a href="javascript:download('stream.m3u')">
+                    <div id="start" onclick="playCurrent()">   
+                    <br><br>Start to stream <br>current channel.
+                    </div>
+                </a>
+                <a href="javascript:stopStream()">
+                    <div id="stop">
+                        <br><br>Stop Streaming
+                    </div>
+                </a>
+            </div>
+        </div> 
+    
+        <div>	
+            <div id="header">
+                <h1 align="center">enigma2u</h1> 
+            </div>
+        
+            <div role="main" class="ui-content">
+                <div id="menu-content"></div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
